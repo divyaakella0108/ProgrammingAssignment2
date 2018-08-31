@@ -1,3 +1,4 @@
+## makeMatrix Creates the Matrix Object
 makeMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -11,7 +12,7 @@ makeMatrix <- function(x = matrix()) {
        setinv = setinv,
        getinv = getinv)
 }
-
+## Fetch inverse from cached data 
 cacheinv <- function(x, ...) {
   m <- x$getinv()
   if(!is.null(m)) {
