@@ -19,7 +19,7 @@ cacheinv <- function(x, ...) {
     return(m)
   }
   data <- x$get()
-  m <- solve(data, ...)
+  m <- solve(data, ...) ## Solve helps in inversing the invertible matrix 
   x$setinv(m)
   m
 }
